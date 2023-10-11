@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Personal Blog Andika Yopi Pr. # the website title (if blank, full name will be used instead)
+title: Andika Yopi Pr. # the website title (if blank, full name will be used instead)
 first_name: Andika
 middle_name: Yopi
-last_name: Name
+last_name: Prihartomo
 email: ayprihartomo@gmail.ccm
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Blog contains daily thoughts and software engineering journey.
@@ -66,7 +66,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: # your GitHub user name
+github_username: andikayopr # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
