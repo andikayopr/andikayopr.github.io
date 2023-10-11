@@ -80,6 +80,7 @@
   ],
   "certificates": [
     {
+      "icon": "fa-solid fa-briefcase",
       "name": "Review Developed Software (INTICTPRG515)",
       "issuer": "AAMC Training Group",
       "date": "July 2017"
