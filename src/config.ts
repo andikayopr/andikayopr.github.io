@@ -1,9 +1,9 @@
 export const SITE = {
   website: "https://andikayopr.github.io/", // replace this with your deployed domain
-  author: "Andika Yopi Prihartomo",
+  author: "andikayopr's blog",
   profile: "https://andikayopr.dev/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "Andika Yopi Prihartomo",
+  title: "andikayopr's blog",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
