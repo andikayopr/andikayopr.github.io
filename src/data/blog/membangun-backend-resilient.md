@@ -1,7 +1,22 @@
-Membangun Backend yang "Anti-Meledak": Panduan Resilience Pattern di FastAPI
+---
+author: andikayopr
+pubDatetime: 2026-04-25T15:20:35Z
+modDatetime: 2026-04-25T15:20:35Z
+title: Panduan Resilience Pattern di FastAPI
+featured: false
+draft: false
+tags:
+  - backend
+  - fastapi
+  - resilience-pattern
+description:
+  Panduan Resilience Pattern di FastAPI
+---
+
+Panduan Resilience Pattern di FastAPI
 Dalam dunia pengembangan backend, membuat kode yang "jalan" itu mudah. Namun, membuat kode yang tetap "berdiri tegak" saat database mati, API pihak ketiga lemot, atau saat diserang ribuan bot, itulah tantangan sebenarnya.
 
-Sebagai Software Engineer, kita harus memikirkan skenario terburuk. Berikut adalah 5 pilar utama untuk membangun sistem yang tahan banting (resilient) menggunakan FastAPI.
+Sebagai Software Engineer, kita harus memikirkan skenario terburuk. Berikut adalah 5 pilar utama untuk membangun sistem yang tahan banting (resilient).
 
 1. Graceful Shutdown: "Pamitan" yang Sopan
 Bayangkan Anda sedang menulis data ke database, lalu tiba-tiba server dimatikan paksa. Data bisa korup. Graceful Shutdown memastikan aplikasi kita menyelesaikan semua tugasnya dan menutup koneksi database dengan rapi sebelum benar-benar mati.
