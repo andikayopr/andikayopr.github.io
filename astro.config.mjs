@@ -15,6 +15,7 @@ export default defineConfig({
     experimental: {
         fonts: [
             {
+                provider: 'google',
                 name: 'Google Sans Code',
                 src: [], // You can leave this empty if the component handles the source
                 cssVariable: '--font-google-sans-code',
