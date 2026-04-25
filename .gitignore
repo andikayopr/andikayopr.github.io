@@ -6,6 +6,10 @@ dist/
 
 # dependencies
 node_modules/
+# pnpm directories
+.pnpm-store/
+.pnpm-home/
+pnpm-home
 
 # logs
 npm-debug.log*
@@ -26,3 +30,5 @@ pnpm-debug.log*
 # pagefind
 
 public/pagefind
+
+shell.nix

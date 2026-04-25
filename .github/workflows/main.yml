@@ -1,0 +1,63 @@
+name: CI & Deploy to Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-test:
+    name: Code standards, build & upload
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: "☁️ Checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "📦 Install pnpm"
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.1 # Konsisten dengan template Anda
+
+      - name: "🟢 Use Node.js 20"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: "📦 Install dependencies"
+        run: pnpm install
+
+      - name: "🔎 Lint & Format Check"
+        run: |
+          pnpm run lint
+          pnpm run format:check
+
+      - name: "🚀 Build the project"
+        run: pnpm run build
+
+      # PENTING: Upload hasil build (biasanya folder dist) agar bisa dideploy
+      - name: "📤 Upload Pages Artifact"
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist # Pastikan folder hasil build Astro Anda benar (biasanya dist)
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build-and-test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: "🚀 Deploy to GitHub Pages"
+        id: deployment
+        uses: actions/deploy-pages@v4
