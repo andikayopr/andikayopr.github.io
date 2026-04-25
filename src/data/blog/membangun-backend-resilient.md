@@ -3,7 +3,7 @@ author: andikayopr
 pubDatetime: 2026-04-25T22:20:35+07:00
 modDatetime: 2026-04-25T22:20:35+07:00
 title: Panduan Resilience Pattern di FastAPI
-featured: false
+featured: true
 draft: false
 tags:
   - backend
