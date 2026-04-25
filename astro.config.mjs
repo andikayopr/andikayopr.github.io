@@ -13,6 +13,6 @@ export default defineConfig({
     },
     // This handles the new Font component error
     experimental: {
-        fonts: true,
+        fonts: [],
     },
 })
