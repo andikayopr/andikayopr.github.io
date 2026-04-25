@@ -13,6 +13,12 @@ export default defineConfig({
     },
     // This handles the new Font component error
     experimental: {
-        fonts: [],
+        fonts: [
+            {
+                name: 'Google Sans Code',
+                src: [], // You can leave this empty if the component handles the source
+                cssVariable: '--font-google-sans-code',
+            },
+        ],
     },
 })
