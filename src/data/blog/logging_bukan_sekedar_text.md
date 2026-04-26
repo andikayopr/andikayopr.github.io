@@ -1,7 +1,7 @@
 ---
 author: andikayopr
-pubDatetime: 2026-04-26T22:22:15+07:00
-modDatetime: 2026-04-26T22:22:15+07:00
+pubDatetime: 2026-01-26T22:22:15+07:00
+modDatetime: 2026-01-26T22:22:15+07:00
 title: Logging bukan sekedar teks
 featured: true
 draft: false
